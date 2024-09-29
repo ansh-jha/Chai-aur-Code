@@ -6,8 +6,8 @@ let userEmail;
 const id = Symbol("123");
 const anotherId = Symbol("123");
 
-console.log(id === anotherId);
-
+console.log(id === anotherId); // false
+console.log(typeof anotherId);
 // Non Primitive (Reference)
 // array, objects, functions
 
@@ -25,4 +25,5 @@ function myFunction() {
   console.log("Hello Javascript");
 }
 
-myFunction();
+myFunction(); // type -> function(object)
+// return type of all non primite types is 'object'
